@@ -1,0 +1,42 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background-color: #f8f8f8;
+}
+
+body,
+input,
+button,
+textarea {
+	font: 400 1rem 'Roboto', sans-serif;
+}
+
+@media (prefers-color-scheme: light) {
+	@import './light-mode-variables.scss';
+}
+
+@media (prefers-color-scheme: dark) {
+	@import './dark-mode-variables.scss';
+}
+
+@media (max-width: 1024px) {
+	html {
+		font-size: 93.75%;
+	}
+}
+
+@media (max-width: 768px) {
+	html {
+		font-size: 87.5%;
+	}
+}
+
+@media (max-width: 425px) {
+	html {
+		font-size: 81.25%;
+	}
+}
